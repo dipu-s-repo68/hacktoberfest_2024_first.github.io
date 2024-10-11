@@ -215,3 +215,17 @@ h6 span {
 .btn:hover {
     background-color: #009999; /* Darker shade on hover */
 }
+
+.btn:hover{
+  background-color: #102770;
+  color: #ffeba7;
+  box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+}
+.mb-0 > span{
+background-color:  #ffeba7;;
+margin: 20px;
+border-radius: 23px;
+padding: 10px 24px;
+color: #102770;
+}
+
