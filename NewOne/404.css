@@ -1,0 +1,128 @@
+body{
+    margin:0;
+    padding:0;
+    height:100vh;
+  background-image: linear-gradient(to top, #2e1753, #1f1746, #131537, #0d1028, #050819);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+  }
+  .center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    max-width: 50em;
+    margin: 0 auto;
+  }
+  
+  .error {
+    text-align: center;
+  }
+  
+  .error__title {
+    background: linear-gradient(#00bcd4, #9575cd);
+    -webkit-background-clip: text;
+            background-clip: text;
+    font-family: "Montserrat";
+    font-size: 18rem;
+    font-weight: 200;
+    margin: 0;
+    -webkit-text-fill-color: transparent;
+  }
+  .error__type {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.75rem;
+    letter-spacing: 0.125em;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  .error__cta {
+    color: #fff;
+    font-family: "Source Sans Pro";
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2;
+  }
+  .error__link {
+    color: #fff;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .error__link--purple {
+    background: #9575cd;
+  }
+  .error__link--blue {
+    background: #00bcd4;
+  }
+  
+  .star{
+    position:absolute;
+    width:2px;
+    height:2px;
+    background:#fff;
+    right:0;
+    animation:starTwinkle 3s infinite linear;
+  }
+  
+  .astronaut img{
+    width:100px;
+    position:absolute;
+    top:55%;
+    animation:astronautFly 6s infinite linear;
+  }
+  
+  @keyframes astronautFly{
+    0%{
+      left:-100px;
+    }
+    25%{
+      top:50%;
+      transform:rotate(30deg);
+    }
+    50%{
+      transform:rotate(45deg);
+      top:55%;
+    }
+    75%{
+      top:60%;
+      transform:rotate(30deg);
+    }
+    100%{
+      left:110%;
+      transform:rotate(45deg);
+    }
+  }
+  
+  @keyframes starTwinkle{
+    0%{
+       background:rgba(255,255,255,0.4);
+    }
+    25%{
+      background:rgba(255,255,255,0.8);
+    }
+    50%{
+     background:rgba(255,255,255,1);
+    }
+    75%{
+      background:rgba(255,255,255,0.8);
+    }
+    100%{
+      background:rgba(255,255,255,0.4);
+    }
+  }
+  
+  @media (max-width: 40em) {
+    .error__title {
+      font-size: 10rem;
+    }
+    .error__type {
+      font-size: 1.25rem;
+    }
+    .error__cta {
+      font-size: 1rem;
+    }
+  }
