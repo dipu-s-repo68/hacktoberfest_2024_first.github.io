@@ -10,7 +10,7 @@ Thank you for thinking about contributing to this project! Here’s a simple gui
 2. **Clone Your Fork**  
    Clone the forked repository to your local machine:
    ```bash
-   git clone https://github.com/oathar/hacktoberfest_2024_first.github.io.git
+   git clone https://github.com/dipu-s-repo68/hacktoberfest_2024_first.github.io.git
    ```
 
 3. **Create a Branch**  
